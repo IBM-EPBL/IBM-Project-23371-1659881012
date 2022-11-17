@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/ayush-imag3s/style.css" />
+    <title>IBM Assignment 3 - Ayush H N</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ayush H N - Assignment 3</h1>
+    </header>
+    <main>
+      <p>These images are fetched from the IBM object storage</p>
+      <img
+        src="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/ayush-imag3s/arc.png"
+        alt="arc" />
+      <img
+        src="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/ayush-imag3s/earth.jpg"
+        alt="space" />
+      <img
+        src="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/ayush-imag3s/earth%202.jpg"
+        alt="horizon" />
+      <img
+        src="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/ayush-imag3s/mystic.jpg"
+        alt="react" />
+      <img
+        src="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/ayush-imag3s/webb.jfif"
+        alt="webb" />
+    </main>
+    <footer>
+      <p>The style sheet is loaded from the cloud storage as well.</p>
+      <a
+        href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fjp-tok.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-ddd36855-7432-4fce-95e5-d3cb6fe5fce8%3A%3Afa2d2f17-f497-45ae-aa10-6eedb89ec5b6&integrationID=b3812da6-6f00-489e-8457-ea21dce49203&region=jp-tok&serviceInstanceID=ddd36855-7432-4fce-95e5-d3cb6fe5fce8"
+        target="_blank"
+        rel="noreferrer">
+        Hospital Chat Integration Link
+      </a>
+    </footer>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "8891df84-f325-45f1-9df7-fe8f6e9e74cc", // The ID of this integration.
+        region: "jp-tok", // The region your integration is hosted in.
+        serviceInstanceID: "ddd36855-7432-4fce-95e5-d3cb6fe5fce8", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
