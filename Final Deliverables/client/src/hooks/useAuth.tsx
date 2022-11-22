@@ -36,7 +36,7 @@ const useAuth = () => {
     dispatch(registerUser(body)).then((data: any) => {
       if (data.payload) {
         toast.success(data.payload.message);
-        views.goTo(VIEWS.LOGIN);
+        views.goTo(VIEWS.DASHBOARD);
       } else toast.error(data.error.message);
     });
   };

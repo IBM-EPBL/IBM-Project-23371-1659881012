@@ -12,7 +12,7 @@ def add():
     if user:
         wallet = Wallets().getWallet(request.json["user_id"])
         Wallets().update_threshold(
-            {"user_id": request.json["user_id"], "threshold": str(int(wallet[2]) - int(request.json["amount"]))})
+            {"user_id": request.json["user_id"], "threshold": str(int(wallet[2]) - int(request.json["amount"])), "amount": str(wallet[3])})
         Expenses().add(request.json)
         expense = Expenses().get_expense(request.json)
         print(expense)

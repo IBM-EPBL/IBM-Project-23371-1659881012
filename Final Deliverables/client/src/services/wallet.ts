@@ -1,7 +1,7 @@
 export const getWallet = async (id: number) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/wallet/${id}`, {
+      const response = await fetch(`/api/wallet/${id}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -21,7 +21,7 @@ export const getWallet = async (id: number) => {
 export const addWallet = async (body: any) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/wallet`, {
+      const response = await fetch(`/api/wallet`, {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -42,7 +42,7 @@ export const addWallet = async (body: any) => {
 export const updateWallet = async (body: any) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/wallet`, {
+      const response = await fetch(`/api/wallet`, {
         method: "PATCH",
         headers: {
           Accept: "application/json",

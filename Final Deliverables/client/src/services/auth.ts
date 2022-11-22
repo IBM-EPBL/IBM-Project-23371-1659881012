@@ -1,7 +1,7 @@
 export const login = async (body: any) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/login`, {
+      const response = await fetch(`/api/login`, {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -22,7 +22,7 @@ export const login = async (body: any) => {
 export const logout = async () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/logout`, {
+      const response = await fetch(`/api/logout`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -42,7 +42,7 @@ export const logout = async () => {
 export const getUser = async (id: string) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/user/${id}`, {
+      const response = await fetch(`/api/user/${id}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -62,7 +62,7 @@ export const getUser = async (id: string) => {
 export const register = async (body: any) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/register`, {
+      const response = await fetch(`/api/register`, {
         method: "POST",
         headers: {
           Accept: "application/json",
